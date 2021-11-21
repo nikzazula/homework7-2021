@@ -70,10 +70,10 @@ else {
 //volume
 var slider = document.getElementById("slider");
 var vol = document.getElementById("volume");
-vol.innerText = video.volume * 100;
+vol.innerText = video.volume * 100 + "%";
 slider.addEventListener('change', function() {
 	video.volume = this.value / 100;
-	vol.innerText = video.volume * 100;
+	vol.innerText = video.volume * 100 + "%";
  });
 
  //style change
